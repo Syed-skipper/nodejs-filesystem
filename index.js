@@ -16,4 +16,7 @@ app.use("/", (req, res, next) =>{
 app.use("/file", currenttime);
 
 
-app.listen(8080);
+app.listen(process.env.PORT || 4000, () => {
+
+    console.log("Server Connected.");
+  });

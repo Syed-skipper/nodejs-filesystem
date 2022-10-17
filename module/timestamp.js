@@ -10,8 +10,7 @@ module.exports.createTime = (req, res) => {
       console.log(err);
     }});
     res.send([{Status : "File Created Successfully"}]);
-   
- };
+  };
 
  module.exports.getTime = (req, res) =>{
   try {
